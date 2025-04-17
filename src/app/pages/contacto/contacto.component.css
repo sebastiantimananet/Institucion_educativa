@@ -1,0 +1,68 @@
+/* Estilo para la imagen de fondo */
+.page-header {
+    background-image: url('../../../assets/hosanacarrusel1.jpg'); /* Ajusta la imagen de fondo según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 100px; /* Ajusta el espacio superior si lo necesitas */
+    padding-bottom: 100px; /* Ajusta el espacio inferior si lo necesitas */
+}
+
+.page-header h1 {
+    font-size: 2.5rem; /* Tamaño de fuente por defecto para pantallas grandes */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+/* Tamaño para los elementos de la barra de navegación */
+.page-header nav {
+    font-size: 1rem; /* Ajusta el tamaño de los breadcrumbs si es necesario */
+}
+
+/* Responsive: Ajustar el tamaño del texto en pantallas medianas (tablets y dispositivos pequeños) */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en pantallas más pequeñas */
+    }
+
+    .page-header {
+        padding-top: 60px; /* Reducir el espacio superior en pantallas pequeñas */
+        padding-bottom: 60px; /* Reducir el espacio inferior en pantallas pequeñas */
+    }
+}
+
+/* Responsive: Ajustar el tamaño del texto en pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
+    }
+
+    .page-header {
+        padding-top: 40px; /* Ajustar el espacio superior aún más en pantallas pequeñas */
+        padding-bottom: 40px; /* Ajustar el espacio inferior aún más en pantallas pequeñas */
+    }
+
+    .page-header nav {
+        font-size: 0.9rem; /* Reducir el tamaño de los breadcrumbs en pantallas móviles */
+    }
+}
+
+/* Ajustes adicionales para los formularios y otros elementos */
+@media (max-width: 768px) {
+    .container-xxl {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container-xxl h1 {
+        font-size: 1.8rem; /* Reducir tamaño del título en el formulario */
+    }
+
+    .row g-0 {
+        margin: 0;
+    }
+
+    .col-lg-8 {
+        max-width: 100%; /* Asegura que los elementos ocupen todo el ancho en dispositivos pequeños */
+    }
+}

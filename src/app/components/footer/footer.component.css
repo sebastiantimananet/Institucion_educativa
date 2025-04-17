@@ -1,0 +1,13 @@
+.custom-bg {
+    background-color: #0c3b70c2;/* Celeste personalizado */
+    padding: 10px 0;
+}
+
+.navbar a {
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #000000; /* Color amarillo al pasar el mouse */
+    transform: scale(1.2); /* Efecto de agrandar */
+}

@@ -1,0 +1,20 @@
+#carouselExampleControls {
+    max-width: 80%; /* Ajusta según necesidad */
+    max-height: 400px; /* Altura máxima */
+    margin: auto; /* Centrar */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Evitar que sobresalga */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Ajustar imágenes */
+.carousel-inner img {
+    object-fit: cover; /* Ajustar imagen sin deformarla */
+    height: 400px; /* Ajustar a la altura del carrusel */
+    border-radius: 15px;
+}
+
+/* Botones de control */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Cambiar color a blanco */
+}

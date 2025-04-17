@@ -1,0 +1,63 @@
+<app-encabezado></app-encabezado>
+<body>
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Contacto</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" routerLink="">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="text-white"routerLink="/Nosotros">Nosotros</a></li>
+                <li class="breadcrumb-item text-primary active" routerLink="/contacto">Contacto</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="section-title bg-white text-center text-primary px-3">Contáctenos</h6>
+            <h1 class="display-6 mb-4">Si tiene alguna consulta, no dude en contactarnos.</h1>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
+                <p class="text-center mb-4"></p>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Sujeto</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">enviar mensaje </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<app-footer></app-footer>

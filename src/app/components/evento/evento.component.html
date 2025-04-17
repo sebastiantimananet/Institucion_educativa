@@ -1,0 +1,14 @@
+<p  class="titulo-eventos">Últimos Eventos de la Institución Educativa</p>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let evento of eventos">
+    <div class="card" style="width: 18rem;">
+      <img [src]="evento.img" class="card-img-top" alt="{{evento.titulo}}">
+      <div class="card-body">
+        <h5 class="card-title">{{evento.titulo}}</h5>
+        <p class="card-text">{{evento.descripcion}}</p>
+        <a href="#" class="btn btn-primary">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
