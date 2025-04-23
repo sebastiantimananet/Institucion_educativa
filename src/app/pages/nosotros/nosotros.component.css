@@ -46,54 +46,56 @@
     animation: count-up 3s ease-in-out forwards;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 2rem; /* Reducción del tamaño del título en pantallas pequeñas */
-    }
+/* Tipografías base */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #002D5C;
+    line-height: 1.6;
+  }
+  
+  /* Títulos principales */
+  .page-header h1,
+  .text-container h2,
+  .fact-item h5 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+  }
+  
+  /* Tamaños */
+  .page-header h1 { font-size: 3rem; }
+  .text-container h2 { font-size: 2rem; margin-bottom: 1rem; }
+  
+  /* Párrafos */
+  .text-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+  }
+  
+  /* Estadísticas número grande */
+  .fact-item h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+  }
 
-    /* Cambiar el layout para pantallas más pequeñas */
-    .container-xxl {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Colocar texto y carrusel uno debajo del otro */
-    .row.g-4 {
-        flex-direction: column; /* Alineación vertical */
-    }
-
-    .col-lg-6, .col-md-6 {
-        width: 100%; /* Hacer que los elementos ocupen todo el ancho */
-    }
-
-    /* Ajustes al carrusel */
-    .carousel-item img {
-        width: 100%; /* Asegura que las imágenes del carrusel ocupen todo el ancho del contenedor */
-    }
-
-    /* Ajustes al texto */
-    .text-container p {
-        font-size: 1rem; /* Ajuste de tamaño de fuente para móviles */
-    }
+  /* Título de sección en dorado y subrayado */
+.text-container h2 {
+    color: #FFD700;              /* amarillo dorado */
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
 }
 
-@media (max-width: 576px) {
-    /* Estilo específico para pantallas muy pequeñas */
-    .page-header h1 {
-        font-size: 1.5rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
-    }
-
-    .fact-item h1 {
-        font-size: 2rem; /* Ajuste de tamaño para los contadores */
-    }
-
-    /* Ajustar las imágenes del carrusel */
-    .carousel-item img {
-        height: 200px; /* Limitar la altura de las imágenes en dispositivos pequeños */
-    }
-
-    .fact-item {
-        padding: 10px; /* Reducir el padding para pantallas pequeñas */
-    }
+.text-container h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 250px;                 /* ancho de la línea */
+    height: 4px;                 /* grosor de la línea */
+    background-color: #FFD700;   /* mismo dorado */
+    border-radius: 2px;
 }
+
+

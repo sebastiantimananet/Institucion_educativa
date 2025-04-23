@@ -1,3 +1,14 @@
 .navbar-custom {
     background-color: #0c3b70c2; /* Azul personalizado */
 }
+/* Estilo para los elementos dentro del encabezado */
+.navbar-brand {
+    text-align: center;
+}
+
+.hosanna {
+    font-size: 1.2rem; /* Puedes ajustar el tamaño del texto de 'HOSANNA' */
+    font-weight: bold;
+    color: #FFD700; /* Usando el color dorado, o ajusta según tu preferencia */
+    margin-top: 5px; /* Agrega un pequeño margen si es necesario */
+}
